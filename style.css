@@ -1,8 +1,9 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #ffd6e8;
+  font-family: 'Arial', sans-serif;
+  background: #7b112c; /* maroon red */
   height: 100vh;
+  color: #fff;
 }
 
 .center {
@@ -10,35 +11,48 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .hidden {
   display: none;
 }
 
+h1 {
+  font-size: 2.4rem; /* BIG for phones */
+  margin-bottom: 20px;
+}
+
 button {
-  padding: 15px 25px;
-  font-size: 18px;
+  padding: 16px 30px;
+  font-size: 1.3rem;
   border: none;
-  border-radius: 12px;
+  border-radius: 14px;
   cursor: pointer;
-  margin: 10px;
+  margin: 12px;
+}
+
+button:first-of-type {
+  background: #c2185b; /* cherry red */
+  color: white;
 }
 
 #noBtn {
+  background: #ff6f91;
+  color: white;
   position: relative;
 }
 
 .heart {
   position: fixed;
-  bottom: 0;
-  font-size: 24px;
+  bottom: -20px;
+  font-size: 3.5rem; /* BIG HEARTS */
   animation: floatUp 4s linear forwards;
 }
 
 @keyframes floatUp {
   to {
-    transform: translateY(-100vh);
+    transform: translateY(-110vh);
     opacity: 0;
   }
 }
